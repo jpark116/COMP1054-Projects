@@ -1,0 +1,196 @@
+/* Formatting the entire page removing margin and padding also setting box-sizing to border-box */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /* --Page Body -- */
+
+/* Formatting the entire page removing margin and padding also setting box-sizing to border-box */
+/* Spacing out the main elements of the body of the page header, main and footer */
+/* Adding an image to the background of the page */
+/* Styling image so it covers the whole area of the page. */
+body{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: .18fr .12fr 2fr .1fr; 
+    gap:20px;
+    background-image: url(whiskey.jpg);
+    background-size: cover;
+    background-position: center;
+}
+    /* --Page Header -- */
+
+/* Setting up header spacing and positioning headers in the center. */
+header{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 100px;
+    justify-items: center;
+    background-color: rgba(0, 0, 0, 0.26)
+   
+}
+
+/* Properly positioning title Song name in center of header. */
+/* Preventing text from wrapping. */
+header h1 { 
+    /* Layout */
+    grid-column: 2/3; 
+    grid-row: 1/1;
+    white-space: nowrap;
+    padding: 10px;
+    height: 55%;
+    
+    /* Fonts */
+    font-size: 4em;
+    font-weight: bold;
+    font-family: special elite;
+    color: beige;
+
+    /* Background */
+    background-color:rgba(0, 0, 0, 0.377);
+
+    /* Border */
+    border-style:double;
+    border-width: 3px;
+    border-color:beige;
+}
+
+/* Making sure text is centered and under the main title of the song. */
+/* Making font color proper size and color. */
+/* Add background and border styling */
+header h3{
+
+    grid-row: 2/2;
+    grid-column: 2/3;
+    height: 60%;
+    padding: 10px;
+    
+    /* Font */
+    font-size: 2.5em;
+    font-family: special elite;
+    color: beige;
+
+    /* Background */
+    background-color:rgba(0, 0, 0, 0.377);
+
+    /* Border */
+    border-style: solid;
+    border-width: 3px;
+    border-color:beige;
+}
+
+/* --Page Main Section -- */
+/* Spacing for lyrics using grid. */
+/* Formatting text. */
+main{ 
+    /* Layout divs */
+    display:grid;
+    grid-template-rows: .6fr 1fr .6fr 1fr .45fr 1.15fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    
+    gap:20px;
+    width:50%;
+    height: 100%;
+    padding: 40px;
+    margin:20px;
+    
+
+    /* Background */
+    background-color: rgba(59, 40, 20, 0.771);
+
+    /* Border */
+    border: 3px solid grey;
+    
+}
+
+/* Formatting lyrics using grid. */
+main div {
+    /* Layout p, h4*/
+    display:grid;
+    grid-template-rows: 10px 1fr;
+    grid-column: 2/3;
+    
+}
+
+/* Add color and font to text. */
+/* Create new lines for lyric text*/
+main div p {
+    white-space: pre-line;
+    text-align: left;
+    font-size: 1.1rem;
+    font-family: funnel sans;
+    color: white;
+    
+    
+}
+
+/* aligning title lyric headers. such as verses and choruses. */
+/* Add text color and font. */
+main div h4 {
+    /* Layout */
+    text-align: left;
+    font-size: 1.2em;
+    font-family: funnel sans;
+    color:antiquewhite;
+    
+}
+
+/* Paragraph section background color, border and spacing.  */
+/* Add font color and size. */
+
+section p{
+    /* Layout */
+    width:50%;
+    align-self: center;    
+    justify-self: center;
+
+    /* Font */
+    color:white;
+    font-size: 1.2rem;
+    font-family: funnel sans;
+    
+    /* Background */
+    background-color: rgba(59, 40, 20, 0.771);
+    border: 3px solid grey;
+    padding: 20px;
+}
+
+/*  */
+footer {
+    /* layout */
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    justify-content:left;
+    margin-top: 20px;
+
+
+    /* background */
+    background-color:rgba(0, 0, 0, 0.445);
+    
+    /* text */
+    text-align:center;
+    color:white;
+}
+
+
+/* Center text, change font color, hide bullet points. */
+footer ul {
+    /* layout */
+    grid-column: 2/3;
+    list-style-type: none;
+    color:white;
+    text-align:left;
+
+}
+
+/* change color and size of text for links. */
+footer ul li a {
+    color:rgb(182, 175, 175);
+    size: 1.2rem;
+}
