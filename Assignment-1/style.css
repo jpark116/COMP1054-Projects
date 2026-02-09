@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+    /* --Page Body -- */
+
+/* Formatting the entire page removing margin and padding also setting box-sizing to border-box */
 /* Spacing out the main elements of the body of the page header, main and footer */
 /* Adding an image to the background of the page */
 /* Styling image so it covers the whole area of the page. */
@@ -17,4 +20,62 @@ body{
     background-image: url(whiskey.jpg);
     background-size: cover;
     background-position: center;
+}
+    /* --Page Header -- */
+
+/* Setting up header spacing and positioning headers in the center. */
+header{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+   
+}
+
+/* Properly positioning title Song name in center of header. */
+/* Preventing text from wrapping. */
+header h1 { 
+    /* Layout */
+    grid-column: 2/3; 
+    white-space: nowrap;
+    padding: 20px;
+    height: 50%;
+    
+    /* Fonts */
+    font-size: 4em;
+    font-weight: bold;
+    font-family: special elite;
+    color: beige;
+
+    /* Background */
+    background-color:rgba(0, 0, 0, 0.377);
+
+    /* Border */
+    border-style:double;
+    border-width: 3px;
+    border-color:beige;
+}
+
+/* Making sure text is centered and under the main title of the song. */
+/* Making font color proper size and color. */
+/* Add background and border styling */
+header h3{
+
+    grid-row: 2/3;
+    grid-column: 2/3;
+    height: 35%;
+    padding: 10px;
+    
+    /* Font */
+    font-size: 2.5em;
+    font-family: special elite;
+    color: beige;
+
+    /* Background */
+    background-color:rgba(0, 0, 0, 0.377);
+
+    /* Border */
+    border-style: solid;
+    border-width: 3px;
+    border-color:beige;
 }
